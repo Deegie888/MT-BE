@@ -1,0 +1,40 @@
+<!doctype html
+<title>Number Guessing Game</title>
+
+<p id="output"> i am thinking of a number between 0 and 99.</p>
+<input id="input"type="text" placeholder="Enter your guess....">
+<button>guess</button>
+
+<script type"text/javascript">
+
+
+//Game Variables
+var randomVariables = Math.floor(Math.random() *100);
+var mysteryNumber = randomVariables;
+var playerGuess = 0;
+var guessesRemaining = 10;
+var guessesMade = 0;
+var gameState = "";
+var gameWon = false;
+
+console.log(randomVariables)
+
+//The input and output fields
+var input = document.querySelector("#input");
+var output = document.querySelector("#output");
+
+//The button
+var button = document.querySelector("button");
+button.style.cursor="pointer";
+button.addeventListener("click",clickHandler,false);
+
+window.addeventListener("keydown,keydownhandler,false);
+
+
+
+
+
+
+
+
+
